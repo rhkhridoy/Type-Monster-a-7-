@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container rounded-start">
+        <h1 class="text-center bg-success p-5"><span class="text-warning">Wel</span><span
+                class="text-danger">Come</span> to
+            <span class="text-white">HRIDOY's</span>
+            Blog
+        </h1>
+    </div>
+    <div class="container p-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Differece beteen Local storage and Session storage</h3>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            SessionStorage is similar to localStorage ; the difference is that while data in
+                            localStorage
+                            doesn't expire, data in
+                            sessionStorage is cleared when the page session ends. Whenever a document is loaded in a
+                            particular tab in the browser,
+                            a unique page session gets created and assigned to that particular tab.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>Differece between Global Scope and Blog Scope</h3>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            In a browser environment, the global scope is controlled by the window object while in Node.
+                            js, it's controlled by the
+                            global object. Block scopes are what you get when you use if statements, for statements, and
+                            the like.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>How Even loop Works in JavaScript?</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
+                            Call Stack is empty, the
+                            Event Loop will take the first event from the queue and will push it to the Call Stack,
+                            which effectively runs it. Such
+                            an iteration is called a tick in the Event Loop.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3>How We get Undefined?</h3>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Note: The undefined is not a reserved keyword in JavaScript, and thus it is possible to
+                            declare a variable with the name
+                            undefined. So the correct way to test undefined variable or property is using the typeof
+                            operator, like this: if(typeof
+                            myVar === 'undefined'). <br><br>
+
+                            <strong>Use the equality operator (==)</strong><br>
+                            In JavaScript if a variable has been declared, but has not been assigned a value, is
+                            automatically assigned the value
+                            undefined. Therefore, if you try to display the value of such variable, the word "undefined"
+                            will be displayed. Whereas,
+                            the null is a special assignment value, which can be assigned to a variable as a
+                            representation of no value.
+
+                            In simple words you can say a null value means no value or absence of a value, and undefined
+                            means a variable that has
+                            been declared but no yet assigned a value.
+
+                            To check if a variable is undefined or null you can use the equality operator == or strict
+                            equality operator === (also
+                            called identity operator).
+                        <pre>
+                            const seconds = new Date().getTime() / 1000;
+
+                            setTimeout(() => {
+                            // prints out "2", meaning that the callback is not called immediately after 500
+                            milliseconds.
+                            console.log(`Ran after ${new Date().getTime() / 1000 - seconds} seconds`);
+                            }, 500)
+
+                            while (true) {
+                            if (new Date().getTime() / 1000 - seconds >= 2) {
+                            console.log("Good, looped for 2 seconds");
+                            break;
+                            }
+                            }
+                        </pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center text-dark fixed-bottom">@copyright 2022</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
